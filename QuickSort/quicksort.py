@@ -16,7 +16,7 @@ import random
     :return:    nothing, the side effect is that list[start_index, end_index] is sorted
 '''
 def quicksort(list: list, start_index: int, end_index: int):
-    
+
     # we've reach the end of our paritition so let's return back
     if start_index >= end_index:
         return
@@ -48,3 +48,4 @@ def quicksort(list: list, start_index: int, end_index: int):
 
 arr = [9,8,7,5,3,7,8,1]
 quicksort(list=arr, start_index=0, end_index=len(arr)-1)
+print(arr)
